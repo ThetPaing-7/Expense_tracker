@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- Stye -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Input section of income and expense -->
+        <div class="input">
+            <!-- Form to add the record -->
+            <form method="post">
+
+                <div>
+                    <label for="amount">Amount</label>
+                    <input type="text" id="amount" name="amount">
+                </div>
+                
+
+                <div>Please Select the Input type</div>
+
+                <div class="radioGp">
+                    <label for="income">Income</label>
+                    <input type="radio" id="income" name="input" value="income">
+    
+                    <!--  -->
+                    <label for="expense">Expense</label>
+                    <input type="radio" id="expense" name="input" value="expense">
+                </div>
+
+                <!-- Button to Submit -->
+                <div class="buttonGp">
+                    <button type="submit">Submit</button>
+                    <button type="reset">reset</button>
+                </div>
+            </form>
+        </div>
+        <!-- List of the all income and expense -->
+        <div class="displaySection"></div>
+    </div>
+    
+</body>
+</html>
