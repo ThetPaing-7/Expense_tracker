@@ -6,13 +6,22 @@
     <title>Expense Tracker</title>
     <!-- Stye -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Js link -->
+    <script src="jsfile.js" defer></script>
+
+    <!-- Google Icons -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
 </head>
 <body>
     <div class="container">
         <!-- Input section of income and expense -->
-        <div class="input">
+        <div class="inputSection">
             <!-- Form to add the record -->
-            <form method="post">
+            <form method="post" id="record">
 
                 <div>
                     <label for="amount">Amount</label>
@@ -31,15 +40,28 @@
                     <input type="radio" id="expense" name="input" value="expense">
                 </div>
 
+                <div>
+                    <label for="note">Additional Note</label>
+                    <input type="text" id="note" name="note">
+                </div>
+
                 <!-- Button to Submit -->
-                <div class="buttonGp">
+                <div class="buttonGp">  
                     <button type="submit">Submit</button>
                     <button type="reset">reset</button>
                 </div>
             </form>
+
+            <div>Balance: <span id="balanceDisplay">0</span></div>
+            <div>Income: <span id="IncomeDisplay">0</span></div>
+            <div>Expense: <span id="ExpenseDisplay">0</span></div>
         </div>
         <!-- List of the all income and expense -->
-        <div class="displaySection"></div>
+        <div class="displaySection">
+           <div id="cardholder">
+
+           </div>
+        </div>
     </div>
     
 </body>
