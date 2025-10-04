@@ -20,16 +20,17 @@
     <div class="container">
         <!-- Input section of income and expense -->
         <div class="inputSection">
+            <h1>Please Add the record</h1>
             <!-- Form to add the record -->
             <form method="post" id="record">
 
                 <div>
-                    <label for="amount">Amount</label>
+                    <label for="amount">Amount:</label>
                     <input type="text" id="amount" name="amount">
                 </div>
                 
 
-                <div>Please Select the Input type</div>
+                <div style="font-weight: bold;">Please Select the Input type</div>
 
                 <div class="radioGp">
                     <label for="income">Income</label>
@@ -41,7 +42,7 @@
                 </div>
 
                 <div>
-                    <label for="note">Additional Note</label>
+                    <label for="note">Additional Note:</label>
                     <input type="text" id="note" name="note">
                 </div>
 
@@ -52,9 +53,11 @@
                 </div>
             </form>
 
+            <div class="div">
             <div>Balance: <span id="balanceDisplay">0</span></div>
             <div>Income: <span id="IncomeDisplay">0</span></div>
             <div>Expense: <span id="ExpenseDisplay">0</span></div>
+            </div>
         </div>
         <!-- List of the all income and expense -->
         <div class="displaySection">

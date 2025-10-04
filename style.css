@@ -8,16 +8,70 @@ html, body {
     height: 100%;
 }
 
+:root{
+    --mainBgColor: brown;
+    --inputSectionColor: hsla(100, 7%, 73%, 0.715);
+    --placeholderColor:rgb(37, 37, 98);
+    
+    /* Font */
+    --headerFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .container{
     display: grid;
     grid-template-columns: 3fr 5fr;
     height: 100%;
 }
 
-.input{
+/* Form area */
+.inputSection{
     grid-area: 1 / 1 / 2 / 2 ;
-    
+    background-color: var(--inputSectionColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.inputSection h1{
+    font-family: var(--headerFont);
+    font-size: 2.5rem;
+}
+
+form{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+form div{
+    margin: 10px 0px;
+}
+
+label{
+    font-weight: 500;
+    font-style: oblique;
+}
+
+input[type="text"]{
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+input[type="text"]:hover{
+    background-color: aquamarine;
+}
+
+input[type="text"]:active{
+    background-color: blue;
+}
+
+input[type="text"]::placeholder{
+    text-align: center;
+    color: var(--placeholderColor);
+}
+
 
 
 .material-symbols-outlined {
@@ -36,4 +90,6 @@ html, body {
     grid-area: 1 / 2 / 2 / 3;
     background-color: brown;
 }
+
+
 
