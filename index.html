@@ -26,7 +26,7 @@
 
                 <div>
                     <label for="amount">Amount:</label>
-                    <input type="text" id="amount" name="amount">
+                    <input type="number" id="amount" name="amount" min="1" required>
                 </div>
                 
 
@@ -49,14 +49,14 @@
                 <!-- Button to Submit -->
                 <div class="buttonGp">  
                     <button type="submit">Submit</button>
-                    <button type="reset">reset</button>
+                    <button type="reset">Clear</button>
                 </div>
             </form>
 
-            <div class="div">
-            <div>Balance: <span id="balanceDisplay">0</span></div>
-            <div>Income: <span id="IncomeDisplay">0</span></div>
-            <div>Expense: <span id="ExpenseDisplay">0</span></div>
+            <div class="staticdiv">
+            <div>Balance$: <span id="balanceDisplay">0</span></div>
+            <div>Income$: <span id="IncomeDisplay">0</span></div>
+            <div>Expense$: <span id="ExpenseDisplay">0</span></div>
             </div>
         </div>
         <!-- List of the all income and expense -->

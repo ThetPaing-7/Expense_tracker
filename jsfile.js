@@ -56,16 +56,17 @@ function Expentracker(formID,balanceId,expenseId,IncomeId,Input,noteId,cardholde
         newRecord.setAttribute("class","card")
         // For aamount
         const amount = document.createElement("h2")
-        amount.textContent = amountadd;
+        amount.textContent = "$" + amountadd;
         amount.setAttribute("class","amount")
 
         // For type
         const typeOfIncome = document.createElement("h2")
         typeOfIncome.textContent = type;
-        typeOfIncome.setAttribute("class","type")
+        typeOfIncome.setAttribute("class",type)
 
         const noteholder = document.createElement("p")
         noteholder.textContent = noteToDisplay
+        noteholder.setAttribute("class","note")
 
         // Add icon
         const icon = document.createElement("span");
